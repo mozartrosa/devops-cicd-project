@@ -1,33 +1,30 @@
 <settings>
-    <servers>
-      <server>
-        <id>devops-cicd-domain-devops-cicd-project</id>
-        <username>aws</username>
-        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-      </server>
-    </servers>
-
-    <profiles>
-      <profile>
-        <id>devops-cicd-domain-devops-cicd-project</id>
-        <activation>
-          <activeByDefault>true</activeByDefault>
-        </activation>
-        <repositories>
-          <repository>
-            <id>devops-cicd-domain-devops-cicd-project</id>
-            <url>https://devops-cicd-domain-871159689414.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-project/</url>
-          </repository>
-        </repositories>
-      </profile>
-    </profiles>
-
-    <mirrors>
-      <mirror>
-        <id>devops-cicd-domain-devops-cicd-project</id>
-        <name>devops-cicd-domain-devops-cicd-project</name>
-        <url>https://devops-cicd-domain-871159689414.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-project/</url>
-        <mirrorOf>*</mirrorOf>
-      </mirror>
-    </mirrors>
+<servers>
+  <server>
+    <id>devops-cicd-project-devops-cicd-project</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>devops-cicd-project-devops-cicd-project</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>devops-cicd-project-devops-cicd-project</id>
+        <url>https://devops-cicd-project-871159689414.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-project/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles><mirrors>
+  <mirror>
+    <id>devops-cicd-project-devops-cicd-project</id>
+    <name>devops-cicd-project-devops-cicd-project</name>
+    <url>https://devops-cicd-project-871159689414.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-project/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
 </settings>
